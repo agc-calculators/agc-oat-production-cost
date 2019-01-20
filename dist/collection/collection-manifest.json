@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-oat-production-cost",
+      "dependencies": [],
+      "componentClass": "AgcOatProductionCost",
+      "componentPath": "components/agc-oat-production-cost/agc-oat-production-cost.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-production-cost-inputs",
+      "dependencies": [],
+      "componentClass": "AgcOatProductionCostInputs",
+      "componentPath": "components/agc-oat-production-cost-inputs/agc-oat-production-cost-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-production-cost-progress",
+      "dependencies": [],
+      "componentClass": "AgcOatProductionCostProgress",
+      "componentPath": "components/agc-oat-production-cost-progress/agc-oat-production-cost-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-production-cost-results",
+      "dependencies": [],
+      "componentClass": "AgcOatProductionCostResults",
+      "componentPath": "components/agc-oat-production-cost-results/agc-oat-production-cost-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-oat-production-cost-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcOatProductionCostResultsPlaceholder",
+      "componentPath": "components/agc-oat-production-cost-results-placeholder/agc-oat-production-cost-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
